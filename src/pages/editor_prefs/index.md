@@ -93,6 +93,8 @@ date: 2018-05-03
 }
 ```
 
+<br/>
+
 ##### VS Code [keybindings]
 
 ```json
@@ -174,6 +176,35 @@ date: 2018-05-03
     "command": "-workbench.action.focusFirstEditorGroup"
   }
 ]
+```
+
+<br/>
+
+##### VS Code [extensions]
+
+```bash
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension PKief.material-icon-theme
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension TwentyChung.jsx
+code --install-extension adamvoss.yaml
+code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension blanu.vscode-styled-jsx
+code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension mgmcdermott.vscode-language-babel
+code --install-extension mikestead.dotenv
+code --install-extension mrmlnc.vscode-apache
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension patbenatar.advanced-new-file
+code --install-extension thenikso.github-plus-theme
+code --install-extension vscodevim.vim
+code --install-extension whatwedo.twig
+code --install-extension xabikos.ReactSnippets
+code --install-extension zhuangtongfa.Material-theme
 ```
 
 <br/>

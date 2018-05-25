@@ -4,27 +4,30 @@
   "version": "1.0.0",
   "author": "Simo Simeunovic <simeunovics@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby": "^1.9.261",
+    "gatsby-link": "^1.6.44",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-remark-prismjs": "^2.0.2",
-    "gatsby-source-filesystem": "^1.5.35",
-    "gatsby-transformer-remark": "^1.7.40",
+    "gatsby-source-filesystem": "^1.5.36",
+    "gatsby-transformer-remark": "^1.7.41",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
     "reset-css": "^3.0.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "watch": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -r git@github.com:simeunovics/simeunovics.github.io.git -b master"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
-    "prettier": "^1.12.0"
+    "prettier": "^1.12.1"
   }
 }
