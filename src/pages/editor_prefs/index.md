@@ -4,7 +4,7 @@ title: 'Editor Preferences'
 date: 2018-05-03
 ---
 
-* [VS Code](#vs_code) |  [Sublime](#sublime)
+* [VS Code](#vs_code) | [Sublime](#sublime)
 
 ### <a name="vs_code"></a> VS Code [preferences]
 
@@ -53,9 +53,7 @@ date: 2018-05-03
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
   },
-  "python.disablePromptForFeatures": ["pylint"],
   "explorer.confirmDelete": false,
-  "workbench.iconTheme": "eq-material-theme-icons",
   "prettier.trailingComma": "all",
   "gitlens.statusBar.enabled": false,
   "gitlens.currentLine.enabled": false,
@@ -74,13 +72,12 @@ date: 2018-05-03
     "**/bower_components": true,
     "**/var": true
   },
-  "material-icon-theme.showUpdateMessage": false,
   "explorer.decorations.badges": false,
-  "workbench.colorTheme": "Material Theme Palenight",
+  "workbench.colorTheme": "Enki - Rainbow Bro",
   "gitlens.keymap": "chorded",
   "workbench.editor.showTabs": false,
   "workbench.activityBar.visible": false,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.cursorBlinking": "solid",
   "vim.cursorStylePerMode": {
@@ -88,8 +85,13 @@ date: 2018-05-03
     "insert": "line",
     "replace": "block-outline"
   },
-  "prettier.tabWidth": 4,
-  "prettier.singleQuote": true
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "gitlens.historyExplorer.enabled": true,
+  "prettier.eslintIntegration": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.statusBar.visible": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
 ```
 
@@ -183,15 +185,15 @@ date: 2018-05-03
 ##### VS Code [extensions]
 
 ```bash
-code --install-extension Equinusocio.vsc-material-theme
-code --install-extension PKief.material-icon-theme
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension TwentyChung.jsx
 code --install-extension adamvoss.yaml
-code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension asvetliakov.snapshot-tools
 code --install-extension blanu.vscode-styled-jsx
 code --install-extension bmewburn.vscode-intelephense-client
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
+code --install-extension enkia.enki-vscode-theme
 code --install-extension esbenp.prettier-vscode
 code --install-extension mgmcdermott.vscode-language-babel
 code --install-extension mikestead.dotenv
@@ -200,11 +202,11 @@ code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension patbenatar.advanced-new-file
-code --install-extension thenikso.github-plus-theme
+code --install-extension space-ocean-kit-refined.space-ocean-kit-refined
+code --install-extension swjh.base16-leaf-tomorrow-vscode
 code --install-extension vscodevim.vim
 code --install-extension whatwedo.twig
 code --install-extension xabikos.ReactSnippets
-code --install-extension zhuangtongfa.Material-theme
 ```
 
 <br/>
