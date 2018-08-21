@@ -11,7 +11,7 @@ date: 2018-05-03
 ```json
 {
   "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.lineHeight": 45,
   "editor.letterSpacing": 1.2,
@@ -73,25 +73,28 @@ date: 2018-05-03
     "**/var": true
   },
   "explorer.decorations.badges": false,
-  "workbench.colorTheme": "Enki - Rainbow Bro",
+  "workbench.colorTheme": "Enki - Aster Green",
   "gitlens.keymap": "chorded",
   "workbench.editor.showTabs": false,
   "workbench.activityBar.visible": false,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.cursorBlinking": "solid",
-  "vim.cursorStylePerMode": {
-    "normal": "underline",
-    "insert": "line",
-    "replace": "block-outline"
-  },
+  "vim.cursorStylePerMode.normal": "underline",
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
   "gitlens.historyExplorer.enabled": true,
   "prettier.eslintIntegration": true,
-  "terminal.external.osxExec": "iTerm.app",
   "workbench.statusBar.visible": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "html.suggest.angular1": false,
+  "editor.tabCompletion": true,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "breadcrumbs.enabled": true
 }
 ```
 
@@ -101,82 +104,82 @@ date: 2018-05-03
 
 ```json
 [
-  {
-    "key": "alt+enter",
-    "command": "editor.action.showContextMenu",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+f10",
-    "command": "-editor.action.showContextMenu",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+1",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "cmd+b",
-    "command": "-workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "alt+/",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "shift+cmd+n",
-    "command": "extension.advancedNewFile"
-  },
-  {
-    "key": "alt+cmd+n",
-    "command": "-extension.advancedNewFile"
-  },
-  {
-    "key": "cmd+m",
-    "command": "workbench.action.gotoSymbol"
-  },
-  {
-    "key": "shift+cmd+o",
-    "command": "-workbench.action.gotoSymbol"
-  },
-  {
-    "key": "shift+cmd+m",
-    "command": "workbench.action.showAllSymbols"
-  },
-  {
-    "key": "cmd+t",
-    "command": "-workbench.action.showAllSymbols"
-  },
-  {
-    "key": "alt+cmd+l",
-    "command": "editor.action.formatDocument",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+f",
-    "command": "-editor.action.formatDocument",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+right",
-    "command": "workbench.action.terminal.focusNext"
-  },
-  {
-    "key": "cmd+left",
-    "command": "workbench.action.terminal.focusPrevious"
-  },
-  {
-    "key": "shift+cmd+1",
-    "command": "workbench.action.focusFirstEditorGroup"
-  },
-  {
-    "key": "cmd+1",
-    "command": "-workbench.action.focusFirstEditorGroup"
-  }
+    {
+        "key": "alt+enter",
+        "command": "editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+f10",
+        "command": "-editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+/",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "-extension.advancedNewFile"
+    },
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    }
 ]
 ```
 
@@ -185,27 +188,24 @@ date: 2018-05-03
 ##### VS Code [extensions]
 
 ```bash
-code --install-extension PeterJausovec.vscode-docker
 code --install-extension TwentyChung.jsx
 code --install-extension adamvoss.yaml
 code --install-extension asvetliakov.snapshot-tools
 code --install-extension blanu.vscode-styled-jsx
-code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension enkia.enki-vscode-theme
 code --install-extension esbenp.prettier-vscode
+code --install-extension flowtype.flow-for-vscode
 code --install-extension mgmcdermott.vscode-language-babel
 code --install-extension mikestead.dotenv
-code --install-extension mrmlnc.vscode-apache
-code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension patbenatar.advanced-new-file
+code --install-extension PeterJausovec.vscode-docker
 code --install-extension space-ocean-kit-refined.space-ocean-kit-refined
 code --install-extension swjh.base16-leaf-tomorrow-vscode
 code --install-extension vscodevim.vim
-code --install-extension whatwedo.twig
 code --install-extension xabikos.ReactSnippets
 ```
 
